@@ -2,31 +2,13 @@ package programs.generics;
 
 public class FindMaximum {
 
-	private static Integer findMaximum(Integer num1, Integer num2, Integer num3) {
-		if (num1.compareTo(num2) > 0 && num1.compareTo(num3) > 0)
-			return num1;
-		else if (num2.compareTo(num3) > 0)
-			return num2;
+	private static <T extends Comparable<T>> T findMaximum(T val1, T val2, T val3) {
+		if (val1.compareTo(val2) > 0 && val1.compareTo(val3) > 0)
+			return val1;
+		else if (val2.compareTo(val3) > 0)
+			return val2;
 		else
-			return num3;
-	}
-	
-	private static Float findMaximum(Float num1, Float num2, Float num3) {
-		if (num1.compareTo(num2) > 0 && num1.compareTo(num3) > 0)
-			return num1;
-		else if (num2.compareTo(num3) > 0)
-			return num2;
-		else
-			return num3;
-	}
-	
-	private static String findMaximum(String string1, String string2, String string3) {
-		if (string1.compareTo(string2) > 0 && string1.compareTo(string3) > 0)
-			return string1;
-		else if (string2.compareTo(string3) > 0)
-			return string2;
-		else
-			return string3;
+			return val3;
 	}
 	
 	public static void main(String[] args) {
