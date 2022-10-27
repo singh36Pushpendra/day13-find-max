@@ -10,7 +10,6 @@ public class FindMaximumTest {
 
 	@Test
 	public void findMaximumTest() {
-		Assert.assertEquals((Integer)70, FindMaximum.findMaximum(70, 54, 60));
-		System.out.println("Works fine!");
+		Assert.assertEquals((Integer)70, FindMaximum.findMaximum(54, 70, 60));
 	}
 }
