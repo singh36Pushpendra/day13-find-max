@@ -11,7 +11,7 @@ public class FindMaximum {
 			return num3;
 	}
 	
-	private static Float findMaximum(Float num1, Float num2, Float num3) {
+	public static Float findMaximum(Float num1, Float num2, Float num3) {
 		if (num1.compareTo(num2) > 0 && num1.compareTo(num3) > 0)
 			return num1;
 		else if (num2.compareTo(num3) > 0)
