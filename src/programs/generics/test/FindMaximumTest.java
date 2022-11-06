@@ -9,6 +9,6 @@ public class FindMaximumTest {
 
 	@Test
 	public void findMaximumTest() {
-		Assert.assertEquals("Peach", FindMaximum.findMaximum("Apple", "Peach", "Banana"));
+		Assert.assertEquals("Peach", FindMaximum.findMaximum("Apple", "Banana", "Peach"));
 	}
 }
