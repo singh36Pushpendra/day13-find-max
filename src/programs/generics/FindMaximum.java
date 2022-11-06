@@ -2,7 +2,7 @@ package programs.generics;
 
 public class FindMaximum {
 
-	private static <T extends Comparable<T>> T findMaximum(T val1, T val2, T val3) {
+	public static <T extends Comparable<T>> T findMaximum(T val1, T val2, T val3) {
 		if (val1.compareTo(val2) > 0 && val1.compareTo(val3) > 0)
 			return val1;
 		else if (val2.compareTo(val3) > 0)
