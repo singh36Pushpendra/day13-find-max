@@ -10,7 +10,7 @@ public class FindMaximum <T extends Comparable<T>> {
 		this.value3 = value3;
 	}
 
-	private T findMaximum() {
+	public T findMaximum() {
 		if (value1.compareTo(value2) > 0 && value1.compareTo(value3) > 0)
 			return value1;
 		else if (value2.compareTo(value3) > 0)
